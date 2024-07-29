@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Foro de registro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulario de Ingreso</h1>
+    <p id="description">Utilizaremos estos datos para tu nueva cuenta</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Nombre: <input placeholder="Juan" id="name" name="first-name" type="text" required /></label>
+        <label for="last-name">Apellido: <input placeholder="Carrizo" id="last-name" name="last-name" type="text" required />
+        </label>
+        <label id="email-label">Mail: <input placeholder="jcarrizo@mail.com" id="email" name="email" type="email" required />
+        </label>
+        <label for="new-password">Pass: <input placeholder="mM!1min8" id="new-password" name="new-password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)[a-zA-Z0-9\W]{8,}"" required />
+        </label>
+        <label id="number-label">Edad:<input placeholder="5-120" id="number" type="number" min="5" max="120" required />
+        </label>
+      </fieldset>
+      <fieldset>
+      <label for="dropdown">¿Qué te interesa?
+          <select id="dropdown" name="choose">
+            <option value="">(selección)</option>
+            <option value="1">Arte</option>
+            <option value="2">Ingeniería</option>
+            <option value="3">Política</option>
+            <option value="4">Otro</option>
+          </select>
+        </label>
+        <br> 
+        <label for="bio">Información complementaria:
+         <br><br>   <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Me gusta la escultura"></textarea>
+        </label>
+        </fieldset>
+        <fieldset>
+          
+        <legend>Tipo de cuenta</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="checked" /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="checked" /> Negocios</label>
+      </fieldset>
+      <fieldset>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="checked" /> Recibir <a href="https://www.freecodecamp.org/news/terms-of-service/">Newsletter</a>
+  <br>      
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="checked" /> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/">términos y condiciones</a>
+      </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Ingresar" />
+    </form>
+  </body>
+</html>
