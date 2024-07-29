@@ -54,7 +54,7 @@ ROOT_URLCONF = 'PreEntrega3.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['./PreEntrega3/plantillas/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
